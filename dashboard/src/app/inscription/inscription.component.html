@@ -32,8 +32,16 @@
         <label for="lien">Lien avec l'enfant</label>
         <input type="text" id="lien" class="form-control" formControlName="lien" placeholder="Entrez votre lien (parent, tuteur, etc.)" required>
       </div>
-  
-      <button type="submit" class="btn btn-primary" [disabled]="!inscriptionForm.valid">S'inscrire</button>
+      
+
+      <button 
+           type="submit" 
+           class="btn btn-primary" 
+          
+           [routerLink]="['/connexion']"> 
+           S'inscrire
+       </button>
+      <!-- <button type="submit" class="btn btn-primary" [disabled]="!inscriptionForm.valid">S'inscrire</button> -->
     </form>
   
   
