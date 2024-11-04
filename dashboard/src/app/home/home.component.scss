@@ -1,0 +1,560 @@
+// Conteneur principal
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+    color: white;
+    background: url("/assets/img/boy.jpg") center/cover;
+  }
+  
+  // Partie 1
+  .part1 {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+  }
+  
+  // Partie 2
+  .part2 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .part2min1,
+  .part2min2 {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .part2min1 {
+    height: 70%;
+    align-items: flex-end;
+  }
+  
+  .part2min2 {
+    height: 20%;
+    align-items: center;
+  }
+  
+  // Logo
+  .logo img {
+    width: 100px;
+  }
+  
+  // Navigation
+  .navbar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  }
+  
+  // Bouton d'inscription
+  .register {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.2s;
+  
+    &:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+  }
+  
+  // Bouton de connexion
+  .login-btn {
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: #218838;
+    }
+  }
+  
+  // Section introduction
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+  
+    h1 {
+      color: #343a40;
+      font-size: 3em;
+    }
+  
+    p {
+      color: #6c757d;
+      font-size: 1.2em;
+    }
+  }
+  
+  // Intro enfants
+  .intro2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+  
+    .intro2one {
+      width: 20%;
+      height: 100%;
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .intro2two {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  
+  // Section 3
+  .intro3 {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .intro3min1 {
+      width: 97%;
+      height: 95%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ceeeee;
+      border-radius: 5px;
+    }
+  
+    .intro3min1S1 {
+      width: 48%;
+      height: 85%;
+    }
+  
+    .intro3min1S2 {
+      width: 45%;
+      height: 60%;
+      background: url("/assets/images/dashboard.png") center/cover;
+    }
+  
+    .intro3min1S1one {
+      width: 100%;
+      height: 15%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .intro3min1S1two {
+      width: 100%;
+      height: 25%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .intro3min1S1three {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* section4 */
+  .section4 {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro4 {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .intro4min1 {
+    width: 100%;
+    height: 60%;
+    border: 2px solid red;
+  }
+  
+  .intro4min2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro4one {
+    width: 95%;
+    height: 70%;
+    border-radius: 5px;
+    background-color: #EEDAB1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    .intro4oneT1 {
+      width: 30%;
+      height: 90%;
+      background-image: url("/assets/images/bebe.png");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .intro4oneT2 {
+      width: 50%;
+      height: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .oneT1, .oneT2, .oneT3 {
+        width: 90%;
+      }
+  
+      .oneT1 {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+  
+      .oneT2 {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .oneT3 {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  /* section5 */
+  .section5, .section6 {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro5, .intro6 {
+    width: 95%;
+    height: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro5 {
+    background-color: #E4AEAE;
+  
+    .intro5part1 {
+      width: 40%;
+      height: 60%;
+      background-image: url("/assets/images/gestion.png");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .intro5part2 {
+      width: 50%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .intro5part2one {
+        width: 90%;
+        height: 20%;
+      }
+  
+      .intro5part2two, .intro5part2three {
+        width: 90%;
+      }
+  
+      .intro5part2two {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .intro5part2three {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  .intro6 {
+    background-color: #9EF7A2;
+  
+    .intro6part1 {
+      width: 40%;
+      height: 60%;
+      background-image: url("/assets/images/kids.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .intro6part2 {
+      width: 50%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .intro6part2one {
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+      }
+  
+      .intro6part2two, .intro6part2three {
+        width: 90%;
+      }
+  
+      .intro6part2two {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .intro6part2three {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  /* section7, section8 */
+  .section7, .section10 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section7 {
+    height: 100px;
+  }
+  
+  .section8 {
+    height: 500px;
+  
+    .intro8 {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+      .intro8min1 {
+        width: 40%;
+        height: 70%;
+        background-image: url("/assets/images/Captureb.png");
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .intro8min2 {
+        width: 50%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+    .intro9 {
+      width: 100%;
+      height: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  .intro8part, .section10Tmin1, .section10Tmin2 {
+    width: 90%;
+  }
+  
+  .intro8part {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .intro8partone {
+    height: 25%;
+  }
+  
+  .intropartwo {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro8icone {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    .intro8T1 {
+      width: 15%;
+      height: 100%;
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .intro8T2 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+  
+  /* section10 */
+  .section10 {
+    height: 500px;
+  
+    .section10T {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .section10Tmin1, .section10Tmin2 {
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .section10Tmin2 {
+      width: 45%;
+      height: 80%;
+      background-image: url("/assets/images/callc.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  
+  

@@ -1,0 +1,65 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Utilisateur</h4>
+                        <p class="card-category">Ajouter, Lister, Modifier, Supprimer</p>
+                    </div>
+                    <div class="card-body">
+                        <button (click)="toggleAddUserForm()" class="btn btn-primary mb-3">
+                            {{ showAddUserForm ? 'Annuler' : 'Ajouter un utilisateur' }}
+                        </button>
+
+                        <div *ngIf="showAddUserForm" class="add-user-form mb-4">
+                            <h5>Ajouter un nouvel utilisateur</h5>
+                            <input [(ngModel)]="newUser.username" placeholder="Nom d'utilisateur" class="form-control mb-2">
+                            <input [(ngModel)]="newUser.password" placeholder="Mot de passe" type="password" class="form-control mb-2">
+                            <input [(ngModel)]="newUser.user_role" placeholder="Rôle (ID)" class="form-control mb-2">
+                            <button (click)="addUser()" class="btn btn-success">Ajouter</button>
+                        </div>
+
+                        <div *ngIf="showEditUserForm" class="edit-user-form mb-4">
+                            <h5>Modifier l'utilisateur</h5>
+                            <input [(ngModel)]="selectedUser.username" placeholder="Nom d'utilisateur" class="form-control mb-2">
+                            <input [(ngModel)]="selectedUser.user_role" placeholder="Rôle (ID)" class="form-control mb-2">
+                            <button (click)="updateUser()" class="btn btn-warning">Mettre à jour</button>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nom d'utilisateur</th>
+                                        <th>Date de création</th>
+                                        <th>Rôle</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let user of users">
+                                        <td>{{ user.id }}</td>
+                                        <td>{{ user.username }}</td>
+                                        <td>{{ user.created_at }}</td>
+                                        <td>{{ getRoleName(user.user_role) }}</td>
+                                        <td>
+                                            <button (click)="editUser(user)" class="btn btn-warning btn-sm">Modifier</button>
+                                            <button (click)="deleteUser(user)" class="btn btn-danger btn-sm">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+  

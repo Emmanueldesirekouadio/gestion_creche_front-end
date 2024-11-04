@@ -1,0 +1,29 @@
+.payment-page {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .payment-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .payment-options li {
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-options li:hover {
+    transform: scale(1.05);
+  }
+  
+  .payment-options img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  

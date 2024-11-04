@@ -1,0 +1,11 @@
+/* src/app/home/home.component.css */
+.logo-container {
+    text-align: center; /* Centre le logo */
+    margin: 20px 0; /* Marge en haut et en bas */
+  }
+  
+  .logo {
+    width: 140px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient les proportions */
+  }
+  

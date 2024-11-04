@@ -1,0 +1,47 @@
+.tarif-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.tarif-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tarif-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tarif-card:hover {
+    transform: translateY(-5px);
+}
+
+.tarif-price {
+    font-size: 1.8em;
+    color: #007bff;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
